@@ -5,7 +5,7 @@ import image from "../../images/bg.jpg";
 
 import {FaUser, FaLock} from "react-icons/fa";
 
-function Component1(){
+function Component2(){
     return(
         <MainComponent>
 
@@ -33,7 +33,7 @@ function Component1(){
     );
 }
 
-export default Component1;
+export default Component2;
 
 const MainComponent = styled.main`
     height: 100vh;

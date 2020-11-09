@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Home(){
     return(
         <HomeComponent>
-            <h1>Home</h1>
+            <h1>Please select a id</h1>
         </HomeComponent>
     );
 }
