@@ -6,15 +6,18 @@ import Home from "./components/Home";
 import Component1 from "./components/Session1/1";
 import Component2 from "./components/Session1/2";
 import Component3 from "./components/Session1/3";
+import Component4 from "./components/Session1/4";
 
 function Routes(){
     return(
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Home}/>
+
                 <Route path="/1" component={Component1}/>
                 <Route path="/2" component={Component2}/>
                 <Route path="/3" component={Component3}/>
+                <Route path="/4" component={Component4}/>
             </Switch>
         </BrowserRouter>
     );
