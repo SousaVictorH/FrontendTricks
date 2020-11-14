@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Component5(){
+
+    const title = "<AgendaOn/>"
+
     return(
         <MainComponent>
 
             <div className="container">
                 <span className="text1">Welcome in</span>
-                <span className="text2">Darkcode</span>
+                <span className="text2">{title}</span>
             </div>
 
         </MainComponent>
