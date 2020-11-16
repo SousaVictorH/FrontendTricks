@@ -53,11 +53,14 @@ background: #16384c;
     position: relative;
     max-width: 300px;
     height: 215px;
+
     background: #fff;
-    margin: 30px;
-    padding: 20px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+
     display: flex;
     flex-direction: column;
+
     box-shadow: 0 0.5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
 }
@@ -70,18 +73,31 @@ background: #16384c;
     position: relative;
     width: 260px;
     height: 260px;
+
     top: -60px;
-    box-shadow: 0 0.5px 20px rgba(0,0,0,0.2);
 }
 
 .container .card .imgBox img{
-    max-width: 100%;
-    border-radius: 4px;
+    width: 100%;
+    height: 95%;
+    border-radius: 5px;
 }
 
 .container .card .content{
     position: relative;
-    margin: -140px;
+    margin-top: -140px;
     padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: .2s;
 }
 `;

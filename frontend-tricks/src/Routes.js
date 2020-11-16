@@ -11,6 +11,7 @@ import Component5 from "./components/Session1/5";
 
 import Component6 from "./components/Session2/6";
 import Component7 from "./components/Session2/7";
+import Component8 from "./components/Session2/8";
 
 function Routes(){
     return(
@@ -26,6 +27,7 @@ function Routes(){
 
                 <Route path="/6" component={Component6}/>
                 <Route path="/7" component={Component7}/>
+                <Route path="/8" component={Component8}/>
             </Switch>
         </BrowserRouter>
     );
