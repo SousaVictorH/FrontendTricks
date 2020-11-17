@@ -4,20 +4,22 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 
-import Component1 from "./components/Session1/1";
-import Component2 from "./components/Session1/2";
-import Component3 from "./components/Session1/3";
-import Component4 from "./components/Session1/4";
-import Component5 from "./components/Session1/5";
+import button1 from "./components/buttons/button1";
+import button2 from "./components/buttons/button2";
 
-import Component6 from "./components/Session2/6";
-import Component7 from "./components/Session2/7";
-import Component8 from "./components/Session2/8";
-import Component9 from "./components/Session2/9";
-import Component10 from "./components/Session2/10";
+import login1 from "./components/login/login1";
 
-import Component11 from "./components/Session3/11";
-import Component12 from "./components/Session3/12";
+import card1 from "./components/cards/card1";
+import card2 from "./components/cards/card2";
+import card3 from "./components/cards/card3";
+import card4 from "./components/cards/card4";
+import card5 from "./components/cards/card5";
+import card6 from "./components/cards/card6";
+
+import animation1 from "./components/animations/animation1";
+
+import loading1 from "./components/loading/loading1";
+import loading2 from "./components/loading/loading2";
 
 function Routes(){
     return(
@@ -25,21 +27,23 @@ function Routes(){
             <Switch>
                 <Route exact path="/" component={Home}/>
 
-                <Route path="/1" component={Component1}/>
-                <Route path="/2" component={Component2}/>
-                <Route path="/3" component={Component3}/>
-                <Route path="/4" component={Component4}/>
-                <Route path="/5" component={Component5}/>
+                <Route path="/buttons/1" component={button1}/>
+                <Route path="/buttons/2" component={button2}/>
 
-                <Route path="/6" component={Component6}/>
-                <Route path="/7" component={Component7}/>
-                <Route path="/8" component={Component8}/>
-                <Route path="/9" component={Component9}/>
-                <Route path="/10" component={Component10}/>
+                <Route path="/login/1" component={login1}/>
 
-                <Route path="/11" component={Component11}/>
-                <Route path="/12" component={Component12}/>
+                <Route path="/cards/1" component={card1}/>
+                <Route path="/cards/2" component={card2}/>
+                <Route path="/cards/3" component={card3}/>
+                <Route path="/cards/4" component={card4}/>
+                <Route path="/cards/5" component={card5}/>
+                <Route path="/cards/6" component={card6}/>
 
+                <Route path="/animations/1" component={animation1}/>
+
+                <Route path="/loading/1" component={loading1}/>
+                <Route path="/loading/2" component={loading2}/>
+                
                 <Route component={NotFound}/>
             </Switch>
         </BrowserRouter>
