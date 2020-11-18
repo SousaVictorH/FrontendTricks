@@ -81,12 +81,12 @@ const ComponentDiv = styled.div`
     }
 
     .mediaBtn:hover::before{
-        animation: aaa 0.7s 1;
+        animation: hoverAnimation 0.7s 1;
         top: -10%;
         left: -10%;
     }
 
-    @keyframes aaa{
+    @keyframes hoverAnimation{
         0%{
             left: -110%;
             top: 90%;

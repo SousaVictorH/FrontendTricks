@@ -6,6 +6,7 @@ import NotFound from "./components/NotFound";
 
 import button1 from "./components/buttons/button1";
 import button2 from "./components/buttons/button2";
+import button3 from "./components/buttons/button3";
 
 import login1 from "./components/login/login1";
 
@@ -29,6 +30,7 @@ function Routes(){
 
                 <Route path="/buttons/1" component={button1}/>
                 <Route path="/buttons/2" component={button2}/>
+                <Route path="/buttons/3" component={button3}/>
 
                 <Route path="/login/1" component={login1}/>
 

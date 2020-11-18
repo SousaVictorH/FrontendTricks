@@ -40,15 +40,6 @@ export default NotFound;
 
 const ComponentNotFound = styled.div`
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #2c3a47;
-    color: #111;
-
-    height: 100vh;
-    width: 100vw;
-
     .error-template{
         font-size: 28px;
         padding: 50px 15px;

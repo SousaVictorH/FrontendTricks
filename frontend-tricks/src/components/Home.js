@@ -12,6 +12,9 @@ function Home(){
                 <sup>
                     Please selec a ID
                 </sup>
+                <p>
+                    ex.: http://localhost:3000/cards/1
+                </p>
             </div>
             
             <div className="container">
@@ -19,7 +22,7 @@ function Home(){
                     <h2>For buttons</h2>
                     <p>
                         <h3>buttons/id</h3>
-                        <span> 1 {menorIgual} id {menorIgual} 2</span>
+                        <span> 1 {menorIgual} id {menorIgual} 3</span>
                     </p>
                 </div>
 
@@ -65,8 +68,8 @@ export default Home;
 const HomeComponent = styled.div`
 width: 100%;
 height: 100%;
-background: #2c3a47;
-color: #111;
+background: #256ce1;
+color: #000;
 
 display: flex;
 align-items: center;
@@ -88,7 +91,11 @@ min-height: 1050px;
 
 .header sup{
     font-size: 42px;
-    margin-bottom: 65px;
+}
+
+.header p{
+    font-size: 25px;
+    margin: 50px 0;
 }
 
 .container{
@@ -100,6 +107,7 @@ min-height: 1050px;
 }
 
 .box{
+    background: #fff;
     margin: 15px 20px;
     width: 100%;
     height: 100%;
