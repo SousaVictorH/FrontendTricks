@@ -16,6 +16,7 @@ import card3 from "./components/cards/card3";
 import card4 from "./components/cards/card4";
 import card5 from "./components/cards/card5";
 import card6 from "./components/cards/card6";
+import card7 from "./components/cards/card7";
 
 import animation1 from "./components/animations/animation1";
 
@@ -40,6 +41,7 @@ function Routes(){
                 <Route path="/cards/4" component={card4}/>
                 <Route path="/cards/5" component={card5}/>
                 <Route path="/cards/6" component={card6}/>
+                <Route path="/cards/7" component={card7}/>
 
                 <Route path="/animations/1" component={animation1}/>
 

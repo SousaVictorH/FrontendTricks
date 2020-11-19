@@ -21,7 +21,7 @@ function Component1(){
                         <li><strong>5</strong>Email</li>
                         <li><strong>1X</strong>CPU & RAM</li>
                     </ul>
-                    <a href="/10" className="order-bnt">Order Now</a>
+                    <a href="/10">Order Now</a>
                 </div>
 
                 <div className="pricing-card">
@@ -38,7 +38,7 @@ function Component1(){
                         <li><strong>20</strong>Email</li>
                         <li><strong>1.5X</strong>CPU & RAM</li>
                     </ul>
-                    <a href="/10" className="order-bnt">Order Now</a>
+                    <a href="/10">Order Now</a>
                 </div>
 
                 <div className="pricing-card">
@@ -55,7 +55,7 @@ function Component1(){
                         <li><strong>40</strong>Email</li>
                         <li><strong>2X</strong>CPU & RAM</li>
                     </ul>
-                    <a href="/10" className="order-bnt">Order Now</a>
+                    <a href="/10">Order Now</a>
                 </div>
 
                 <div className="pricing-card">
@@ -90,8 +90,10 @@ justify-content: center;
 align-items: center;
 background: #30336b;
 
-width: 100vw;
-height: 100vh;
+height: 100%;
+min-height: 100vh;
+width: 100%;
+min-width: 100vw;
 
 .pricing-table{
     display: flex;
@@ -162,6 +164,7 @@ a{
     text-transform: uppercase;
     font-weight: 500;
     transition: .3s linear;
+    text-decoration: none;
 }
   
 a:hover{

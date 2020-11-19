@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import img from "../../images/bg.jpg";
+import img from "../../images/img.jpg";
 
 function Component1(){
     return(
