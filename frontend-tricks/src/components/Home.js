@@ -38,7 +38,7 @@ function Home(){
                     <h2>For cards</h2>
                     <p>
                         <h3>cards/id</h3>
-                        <span> 1 {menorIgual} id {menorIgual} 6</span>
+                        <span> 1 {menorIgual} id {menorIgual} 7</span>
                     </p>
                 </div>
 
@@ -54,7 +54,7 @@ function Home(){
                     <h2>For loading</h2>
                     <p>
                         <h3>loading/id</h3>
-                        <span> 1 {menorIgual} id {menorIgual} 2</span>
+                        <span> 1 {menorIgual} id {menorIgual} 3</span>
                     </p>
                 </div>
             </div>
@@ -68,7 +68,7 @@ export default Home;
 const HomeComponent = styled.div`
 width: 100%;
 height: 100%;
-background: #256ce1;
+background: linear-gradient(#fff, rgba(135,206,250));
 color: #000;
 
 display: flex;

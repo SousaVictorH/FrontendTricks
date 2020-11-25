@@ -22,6 +22,7 @@ import animation1 from "./components/animations/animation1";
 
 import loading1 from "./components/loading/loading1";
 import loading2 from "./components/loading/loading2";
+import loading3 from "./components/loading/loading3";
 
 function Routes(){
     return(
@@ -47,6 +48,7 @@ function Routes(){
 
                 <Route path="/loading/1" component={loading1}/>
                 <Route path="/loading/2" component={loading2}/>
+                <Route path="/loading/3" component={loading3}/>
                 
                 <Route component={NotFound}/>
             </Switch>
