@@ -1,9 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Home(){
+import {useHistory} from 'react-router-dom';
 
+function Home(){
+    const history = useHistory();
+    
     const menorIgual = "<=";
+
+    function toButtons(){
+        history.push('/buttons/1');
+    }
+
+    function toLogin(){
+        history.push('/login/1');
+    }
+
+    function toCards(){
+        history.push('/cards/1');
+    }
+
+    function toAnimations(){
+        history.push('/animations/1');
+    }
+
+    function toLoading(){
+        history.push('/loading/1');
+    }
 
     return(
         <HomeComponent>
@@ -18,7 +41,7 @@ function Home(){
             </div>
             
             <div className="container">
-                <div className="box">
+                <div className="box" onClick={toButtons}>
                     <h2>For buttons</h2>
                     <p>
                         <h3>buttons/id</h3>
@@ -26,7 +49,7 @@ function Home(){
                     </p>
                 </div>
 
-                <div className="box">
+                <div className="box" onClick={toLogin}>
                     <h2>For login</h2>
                     <p>
                         <h3>login/id</h3>
@@ -34,7 +57,7 @@ function Home(){
                     </p>
                 </div>
 
-                <div className="box">
+                <div className="box" onClick={toCards}>
                     <h2>For cards</h2>
                     <p>
                         <h3>cards/id</h3>
@@ -42,7 +65,7 @@ function Home(){
                     </p>
                 </div>
 
-                <div className="box">
+                <div className="box" onClick={toAnimations}>
                     <h2>For animations</h2>
                     <p>
                         <h3>animations/id</h3>
@@ -50,7 +73,7 @@ function Home(){
                     </p>
                 </div>
 
-                <div className="box">
+                <div className="box" onClick={toLoading}>
                     <h2>For loading</h2>
                     <p>
                         <h3>loading/id</h3>
@@ -114,6 +137,7 @@ min-height: 1050px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .box h2{
