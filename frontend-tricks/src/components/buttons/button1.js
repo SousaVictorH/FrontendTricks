@@ -1,34 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
-import {FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaYoutube} from "react-icons/fa";
+import {FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaYoutube, FaForward} from "react-icons/fa";
 
 function Component1(){
+    const history = useHistory();
+
+    function next(){
+        history.push('/buttons/2');
+    }
+
     return(
-        <ComponentDiv>
+        <main>
+            <div className="next" onClick={next}>
+                <FaForward/>
+            </div>
+            <ComponentDiv>
             
-            <Link className="mediaBtn">
-                <FaFacebook className="icon"/>
-            </Link>
+                <Link className="mediaBtn">
+                    <FaFacebook className="icon"/>
+                </Link>
 
-            <Link className="mediaBtn">
-                <FaTwitter className="icon"/>
-            </Link>
+                <Link className="mediaBtn">
+                    <FaTwitter className="icon"/>
+                </Link>
 
-            <Link className="mediaBtn">
-                <FaGoogle className="icon"/>
-            </Link>
+                <Link className="mediaBtn">
+                    <FaGoogle className="icon"/>
+                </Link>
 
-            <Link className="mediaBtn">
-                <FaInstagram className="icon"/>
-            </Link>
+                <Link className="mediaBtn">
+                    <FaInstagram className="icon"/>
+                </Link>
 
-            <Link className="mediaBtn">
-                <FaYoutube className="icon"/>
-            </Link>
+                <Link className="mediaBtn">
+                    <FaYoutube className="icon"/>
+                </Link>
 
-        </ComponentDiv>
+            </ComponentDiv>
+        </main>
     );
 }
 

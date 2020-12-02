@@ -26,4 +26,18 @@ export default createGlobalStyle`
     button{
         cursor: pointer;
     }
+
+    .next{
+        background: blue;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+    }
 `;
