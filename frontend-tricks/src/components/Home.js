@@ -10,20 +10,16 @@ function Home(){
 
     function toButtons(){
         history.push('/buttons/1');
-    }
-
+    
     function toLogin(){
         history.push('/login/1');
     }
-
     function toCards(){
         history.push('/cards/1');
     }
-
     function toAnimations(){
         history.push('/animations/1');
     }
-
     function toLoading(){
         history.push('/loading/1');
     }
